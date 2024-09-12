@@ -35,7 +35,7 @@ public class Runner {
 	@BeforeMethod
 	public void prepareTest() throws IOException, InterruptedException {
 		
-		DesiredCapabilities capabilities = new DesiredCapabilities();
+		/*DesiredCapabilities capabilities = new DesiredCapabilities();
 		
 		capabilities.setCapability("pCloudy_Username", "Enter your email-id");
 		capabilities.setCapability("pCloudy_ApiKey", "Enter your API Key");
@@ -52,7 +52,27 @@ public class Runner {
 		capabilities.setCapability("automationName", "uiautomator2");
 		capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
 		capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
-		driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+		driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);*/
+
+DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("pCloudy_Username", "rakesh.kulkarni@sstsinc.com");
+		capabilities.setCapability("pCloudy_ApiKey", "m265mbyt3x5wdz3qr2s46k8r");
+		capabilities.setCapability("pCloudy_DurationInMinutes", 10);
+		capabilities.setCapability("newCommandTimeout", 600);
+		capabilities.setCapability("launchTimeout", 90000);
+		capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel9_Android_14.0.0_06a75");
+		capabilities.setCapability("platformVersion", "14.0.0");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("automationName", "uiautomator2");
+		capabilities.setCapability("pCloudy_ApplicationName", "pCloudy_Appium_Dem.apk");
+		capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
+		capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
+		capabilities.setCapability("pCloudy_WildNet", false);
+		capabilities.setCapability("pCloudy_EnableVideo", true);
+		capabilities.setCapability("pCloudy_EnablePerformanceData", true);
+		capabilities.setCapability("pCloudy_EnableDeviceLogs", true);
+		capabilities.setCapability("appiumVersion", "1.22.0");
+		 driver = new AndroidDriver<WebElement>(new URL("https://ind-west.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 		
 	}
 

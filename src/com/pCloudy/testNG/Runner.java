@@ -119,7 +119,7 @@ capabilities.setCapability("appiumVersion", "1.22.0");
 	@AfterMethod
 	public void endTest() throws  IOException {
 
-		driver.quit();
+		//driver.quit();
 	}
 
 	//Capture screenshot

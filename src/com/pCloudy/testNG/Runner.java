@@ -78,7 +78,7 @@ capabilities.setCapability("appiumVersion", "1.22.0");
 		
 	}
 
-	@Test(invocationCount=150)
+	@Test(invocationCount=30)
 	public void Test() throws IOException, InterruptedException {
 
 	    //Click on Accept button

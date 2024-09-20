@@ -67,10 +67,10 @@ capabilities.setCapability("automationName", "uiautomator2");
 capabilities.setCapability("pCloudy_ApplicationName", "pCloudy_Appium_Dem.apk");
 capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
 capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
-capabilities.setCapability("pCloudy_WildNet", false);
-capabilities.setCapability("pCloudy_EnableVideo", true);
-capabilities.setCapability("pCloudy_EnablePerformanceData", true);
-capabilities.setCapability("pCloudy_EnableDeviceLogs", true);
+//capabilities.setCapability("pCloudy_WildNet", false);
+//capabilities.setCapability("pCloudy_EnableVideo", true);
+//capabilities.setCapability("pCloudy_EnablePerformanceData", true);
+//capabilities.setCapability("pCloudy_EnableDeviceLogs", true);
 capabilities.setCapability("appiumVersion", "1.22.0");
 driver = new AndroidDriver<WebElement>(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 

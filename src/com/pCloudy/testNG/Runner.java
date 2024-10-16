@@ -55,24 +55,24 @@ public class Runner {
 		driver = new AndroidDriver(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);*/
       
                DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability("pCloudy_Username", "rakesh.kulkarni@sstsinc.com");
-capabilities.setCapability("pCloudy_ApiKey", "m265mbyt3x5wdz3qr2s46k8r");
-capabilities.setCapability("pCloudy_DurationInMinutes", 10);
-capabilities.setCapability("newCommandTimeout", 600);
-capabilities.setCapability("launchTimeout", 90000);
-capabilities.setCapability("pCloudy_DeviceFullName", "SAMSUNG_GalaxyS9_Android_9.0.0_5a534");
-capabilities.setCapability("platformVersion", "9.0.0");
-capabilities.setCapability("platformName", "Android");
-capabilities.setCapability("automationName", "uiautomator2");
-capabilities.setCapability("pCloudy_ApplicationName", "pCloudy_Appium_Dem.apk");
-capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
-capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
-capabilities.setCapability("pCloudy_WildNet", false);
-capabilities.setCapability("pCloudy_EnableVideo", true);
-capabilities.setCapability("pCloudy_EnablePerformanceData", true);
-capabilities.setCapability("pCloudy_EnableDeviceLogs", true);
-capabilities.setCapability("appiumVersion", "1.22.0");
-driver = new AndroidDriver<WebElement>(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+		capabilities.setCapability("pCloudy_Username", "jaymit.shah@sstsinc.com");
+		capabilities.setCapability("pCloudy_ApiKey", "4zqhm3f5fmbczggv2f6x33mz");
+		capabilities.setCapability("pCloudy_DurationInMinutes", 10);
+		capabilities.setCapability("newCommandTimeout", 600);
+		capabilities.setCapability("launchTimeout", 90000);
+		capabilities.setCapability("pCloudy_DeviceFullName", "SAMSUNG_GalaxyS10Plus_Android_9.0.0_ca43b");
+		capabilities.setCapability("platformVersion", "9.0.0");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("automationName", "uiautomator2");
+		capabilities.setCapability("pCloudy_ApplicationName", "pCloudyAppiumDemo.apk");
+		capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
+		capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
+		capabilities.setCapability("pCloudy_WildNet", false);
+		capabilities.setCapability("pCloudy_EnableVideo", true);
+		capabilities.setCapability("pCloudy_EnablePerformanceData", true);
+		capabilities.setCapability("pCloudy_EnableDeviceLogs", true);
+		//capabilities.setCapability("appiumVersion", "1.22.0");
+		 driver = new AndroidDriver<WebElement>(new URL("https://ship-hats.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 
 		
 	}
